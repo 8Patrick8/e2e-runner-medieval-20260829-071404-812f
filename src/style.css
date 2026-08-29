@@ -1,0 +1,68 @@
+:root {
+  --color-bg: #1b1d2e;
+  --color-fg: #f4e9d8;
+  --color-accent: #f2b134;
+  --color-border: #3a3f5c;
+  --color-muted: #8b93a7;
+  --color-sky_top: #232645;
+  --color-sky_bottom: #4a3f6b;
+  --color-sun: #f6d98c;
+  --color-castle: #5a5470;
+  --color-hill_far: #3d4a5f;
+  --color-hill_near: #2f6f4e;
+  --color-ground: #5b3a29;
+  --color-ground_dark: #3f2718;
+  --color-player_base: #6f7f9e;
+  --color-player_trim: #d9e0ea;
+  --color-player_accent: #b33434;
+  --color-barrel: #8a5a2b;
+  --color-barrel_dark: #5e3a1a;
+  --color-barrel_band: #2c2c34;
+  --color-fence: #7a4a2b;
+  --color-fence_light: #9a6238;
+  --color-fence_dark: #4f2f1a;
+  --color-danger: #d64545;
+  --color-overlay: rgba(20, 22, 35, 0.72);
+
+  --space-0: 4px;
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+#game {
+  display: block;
+  width: min(100vw, 1200px);
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: var(--color-bg);
+}
